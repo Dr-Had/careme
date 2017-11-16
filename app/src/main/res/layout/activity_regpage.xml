@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_regpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hadi.hosp.regpage">
+
+    <TextView
+        android:text="REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#04a777"
+        android:id="@+id/textView9" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="PLEASE ENTER DETAILS TO REGISTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedback"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/textView11" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Name"
+            android:layout_gravity="center"
+            android:background="@drawable/textfieldone"
+            android:padding="20dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_margin="20dp"
+            android:id="@+id/namebox" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/textfieldone"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:hint="Enter Phone Number"
+            android:inputType="numberPassword"
+            android:id="@+id/phonebox" />
+
+        <Button
+            android:text="SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/roundblue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/regsubmit" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

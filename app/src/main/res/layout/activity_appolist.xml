@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_appolist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hadi.hosp.appolist">
+
+    <TextView
+        android:text="YOUR APPOINMENT LIST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textColor="#FF000000"
+        android:textStyle="normal|bold"
+        android:background="#f7f749"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/apolist"
+        android:layout_below="@+id/header"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/apolist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:text="TAKE ANOTHER APPOINMENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundcolor"
+            android:id="@+id/anotherap"/>
+
+        <Button
+            android:text="View in Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/roundblue"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:id="@+id/calendarv" />
+    </LinearLayout>
+
+
+</RelativeLayout>

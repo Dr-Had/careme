@@ -9,13 +9,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".doc"></activity>
+        <activity android:name=".doc" />
+        <activity android:name=".appolist" />
+        <activity android:name=".regpage">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+
+
+
+        <activity android:name=".verific"></activity>
     </application>
 
 </manifest>
